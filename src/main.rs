@@ -1,6 +1,6 @@
 use structopt::StructOpt;
 
-#[derive(StructOpt)]
+#[derive(Debug, StructOpt)]
 struct Cli {
     pattern: String,
     #[structopt(parse(from_os_str))]
@@ -10,4 +10,5 @@ struct Cli {
 
 fn main() {
     let args = Cli::from_args();
+    println!("{:?}", args);
 }
