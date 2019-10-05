@@ -9,5 +9,5 @@ struct Cli {
 
 
 fn main() {
-    let args = Cli::from::args();
+    let args = Cli::from_args();
 }
