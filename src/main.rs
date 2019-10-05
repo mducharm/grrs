@@ -1,3 +1,6 @@
+use structopt::StructOpt;
+
+#[derive(StructOpt)]
 struct Cli {
     pattern: String,
     path: std::path::PathBuf,
